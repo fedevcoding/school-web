@@ -1,0 +1,13 @@
+a:has(img) {
+    text-decoration: none;
+}
+
+.page {
+    text-align: center;
+    font-family: Arial;
+}
+
+.home-img {
+    width: 75px;
+    aspect-ratio: 1;
+}
