@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     int scontoUno, scontoDue, costoLitro, bottiglie, bottiglieTotali, nOrdini, i, scontoApplicato;
     double prezzoScontato, prezzoTotale;
 
@@ -14,27 +15,40 @@ int main() {
     cin >> scontoUno;
     cout << "Inserisci lo sconto per ordini superiori a 40 bottiglie" << endl;
     cin >> scontoDue;
-    if (scontoUno < 0 || scontoDue < 0 || (scontoUno > 100 || scontoDue > 100)) {
+    if (scontoUno < 0 || scontoDue < 0 || (scontoUno > 100 || scontoDue > 100))
+    {
         cout << "Lo sconto deve essere compreso tra 0 e 100" << endl;
-    } else {
-        if (scontoUno > scontoDue) {
+    }
+    else
+    {
+        if (scontoUno > scontoDue)
+        {
             cout << "Lo sconto uno deve essere minore dello sconto due" << endl;
-        } else {
+        }
+        else
+        {
             cout << "Inserisci il numbero di ordini" << endl;
             cin >> nOrdini;
-            for (i = 0; i <= nOrdini - 1; i++) {
+            for (i = 0; i <= nOrdini - 1; i++)
+            {
                 cout << "Inserisci le bottiglie da ordinare" << endl;
                 cin >> bottiglie;
-                if (bottiglie < 20) {
+                if (bottiglie < 20)
+                {
                     scontoApplicato = 0;
-                } else {
-                    if (bottiglie >= 40) {
+                }
+                else
+                {
+                    if (bottiglie >= 40)
+                    {
                         scontoApplicato = scontoDue;
-                    } else {
+                    }
+                    else
+                    {
                         scontoApplicato = scontoUno;
                     }
                 }
-                prezzoScontato = 5 * costoLitro * bottiglie - (double) (5 * costoLitro * bottiglie) / 100 * scontoApplicato;
+                prezzoScontato = 5 * costoLitro * bottiglie - (double)(5 * costoLitro * bottiglie) / 100 * scontoApplicato;
                 prezzoTotale = prezzoTotale + prezzoScontato;
                 bottiglieTotali = bottiglieTotali + bottiglie;
             }

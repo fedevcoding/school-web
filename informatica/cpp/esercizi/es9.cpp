@@ -5,8 +5,7 @@ using namespace std;
 int main(void)
 {
 
-    int base = 0;
-    int altezza = 0;
+    int base, altezza = 0;
 
     cout << "Inserisci la base e altezza di un quadrilatero per saperne l'area e il perimetro\n";
     cin >> base;

@@ -7,11 +7,7 @@ int main(void)
 
     float nums = 5.0;
 
-    int num1 = 0;
-    int num2 = 0;
-    int num3 = 0;
-    int num4 = 0;
-    int num5 = 0;
+    int num1, num2, num3, num4, num5 = 0;
 
     cout << "Inserisci 5 numeri per sapere se la media e' sufficente o da recuperare\n";
     cin >> num1;

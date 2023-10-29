@@ -4,8 +4,7 @@ using namespace std;
 
 int main(void)
 {
-    int prezzo = 0;
-    int sconto = 0;
+    int prezzo, sconto = 0;
 
     cout << "Inserisci un prezzo per saperne il prezzo scontato\n";
     cin >> prezzo;
