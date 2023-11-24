@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1f1f1f;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 a{
@@ -17,6 +17,7 @@ a{
 #squadra img, #rosa img, #palmares img{
     width: 40%;
     border-radius: 10px;
+    box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.75);
 }
 
 
@@ -31,6 +32,9 @@ a{
 
 table {
     border-radius: 10px;
+    width: 60vw;
+    height: 30vh;
+    font-size: 1.3rem;
 }
 
 table tr td {
@@ -38,3 +42,6 @@ table tr td {
     text-align: center;
 }
 
+table th{
+    color: rgb(57, 148, 57);
+}
