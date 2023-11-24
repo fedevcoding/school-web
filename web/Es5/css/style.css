@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+.title{
+    color: rgb(57, 148, 57);
+}
+
+#squadra img, #rosa img, #palmares img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+#squadra, #rosa, #palmares, #rosa > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+table {
+    border-radius: 10px;
+}
+
+table tr td {
+    min-width: 80px;
+    text-align: center;
+}
+
