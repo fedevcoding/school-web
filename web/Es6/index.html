@@ -1,4 +1,4 @@
-<!DOCTYPE htm l>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
 
-    <!-- Google font asap -->
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Lora&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="css/style.css">
 
     <style>
         table {
@@ -20,6 +17,12 @@
         td,
         th {
             padding: 8px 5px;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -38,9 +41,11 @@
     <table border="1" style="margin: 0 auto;">
         <tr style="background-color: orangered;">
             <th colspan="2" style="font-size: 24px; color: white;">
-                <img src="./images/libro.png" alt="libro" style="width: 150px;">
-                Elenco libri
-                <img src="./images/libro.png" alt="libro" style="width: 150px;">
+                <div class="flex">
+                    <img src="./images/libro.png" alt="libro" style="width: 150px;">
+                    Elenco libri
+                    <img src="./images/libro.png" alt="libro" style="width: 150px;">
+                </div>
             </th>
         </tr>
         <tr style="background-color: white;">
@@ -67,9 +72,10 @@
 
     <br />
 
-    <p style="text-align: center; font-size: 24px; font-family: Lora;">Orario Apertura: lun-ven
-        (10:00 - 19:00) - <span style="color: red;">DOMENICA
-            CHIUSO</span></p>
+    <p style="text-align: center; font-size: 24px; font-family: Lora;">
+        Orario Apertura: lun-ven (10:00 - 19:00) -
+        <span style="color: red;">DOMENICA CHIUSO</span>
+    </p>
 
 
     <p style="text-align: center;"><b>Indirizzo:</b> Via della Cultura, 123, Firenze (FI)</p>
