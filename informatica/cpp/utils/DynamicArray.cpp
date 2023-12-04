@@ -38,6 +38,12 @@ public:
         return (*this);
     }
 
+    template <typename... V>
+    void push(V... val)
+    {
+        (append(val), ...);
+    }
+
     bool hasValue(T value)
     {
         for (int i = 0; i < length; i++)
@@ -78,7 +84,7 @@ public:
         return arr[i];
     }
 
-    friend ostream &operator<<(ostream &os, const DopedArray<T> &da)
+    friend ostream &operator<<(ostream &os, const DynamicdArray<T> &da)
     {
         os << "[ ";
         for (int i = 0; i < da.length; i++)
@@ -98,8 +104,10 @@ public:
 int main()
 {
 
-    int arr[] = {1, 2, 3, 4, 5};
+    int arr[] = {1};
     DynamicdArray<int> myArr(arr);
+
+    myArr.push(2, 3, 7);
 
     for (int x : myArr)
     {
