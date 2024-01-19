@@ -1,0 +1,63 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: wheat;
+
+}
+
+.header {
+    background-color: rgb(221, 158, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    border: 3px solid black;
+    color: white;
+}
+
+.header img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.header-nav {
+    background-color: white;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.box {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 3px solid black;
+    background-color: white;
+    padding: 20px 15px;
+}
+
+.box p {
+    text-align: justify;
+}
+
+.box img {
+    width: 60%;
+}
+
+.footer {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 3px solid black;
+    background-color: white;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+
+.footer img {
+    width: 20px;
+}
+
+.red {
+    color: red;
+}

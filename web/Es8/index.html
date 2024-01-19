@@ -8,25 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body style="font-family: 'Heebo', sans-serif; background-color: wheat">
-    <div
-      style="
-        background-color: rgb(221, 158, 99);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 1rem 0;
-        border: 3px solid black;
-      "
-      ;
-    >
-      <img src="./images/giglio.png" alt="Giglio" style="width: 10rem; height: 10rem" />
-      <h1 style="color: white">VISIT FIRENZE</h1>
+  <body>
+    <div class="header">
+      <img src="./images/giglio.png" alt="Giglio" />
+      <h1>VISIT FIRENZE</h1>
     </div>
-    <table style="background-color: white; width: 100%; padding-top: 1rem">
+
+    <table class="header-nav">
       <thead>
         <tr>
           <th><a href="#piazza-signoria">Piazza della Signoria</a></th>
@@ -36,86 +28,44 @@
       </thead>
     </table>
 
-    <div
-      style="
-        width: 60vw;
-        margin: 0 auto;
-        margin-top: 5rem;
-        border: 3px solid black;
-        background-color: white;
-        padding: 20px 15px;
-      "
-      id="piazza-signoria"
-    >
+    <div class="box" id="piazza-signoria">
       <h1>PIAZZA DELLA SIGNORIA</h1>
-      <p style="text-align: justify">
+      <p>
         Piazza della Signoria è la piazza principale di Firenze, sede del potere civile e cuore della vita sociale della
         città. Si trova nella parte centrale della Firenze medievale, a sud della cattedrale di Santa Maria del Fiore.
         In passato ha assunto diversi nomi, come piazza dei Priori o piazza del Granduca.
       </p>
-      <img src="./images/piazza-della-signoria.webp" alt="Piazza della signoria" style="width: 60%" />
+      <img src="./images/piazza-della-signoria.webp" alt="Piazza della signoria" />
     </div>
 
-    <div
-      style="
-        width: 60vw;
-        margin: 0 auto;
-        margin-top: 5rem;
-        border: 3px solid black;
-        background-color: white;
-        padding: 20px 15px;
-      "
-      id="santa-maria"
-    >
+    <div class="box" id="santa-maria">
       <h1>SANTA MARIA DEL FIORE</h1>
-      <p style="text-align: justify">
+      <p>
         La cattedrale metropolitana di Santa Maria del Fiore, conosciuta comunemente come duomo di Firenze, è la
         principale chiesa fiorentina, simbolo della città ed uno dei più famosi d'Italia; quando fu completata, nel
         Quattrocento, era la più grande chiesa al mondo e può vantare ancora oggi il primato assoluto della più grande
         cupola in muratura. Essa sorge sulle fondazioni dell'antica cattedrale di Firenze, la chiesa di Santa Reparata,
         in un punto della città che ha ospitato edifici di culto sin dall'epoca romana.
       </p>
-      <img src="./images/santa-maria-del-fiore.jpg" alt="Santa maria del fiore" style="width: 60%" />
+      <img src="./images/santa-maria-del-fiore.jpg" alt="Santa maria del fiore" />
     </div>
 
-    <div
-      style="
-        width: 60vw;
-        margin: 0 auto;
-        margin-top: 5rem;
-        border: 3px solid black;
-        background-color: white;
-        padding: 20px 15px;
-      "
-      id="ponte-vecchio"
-    >
+    <div class="box" id="ponte-vecchio">
       <h1>PONTE VECCHIO</h1>
-      <p style="text-align: justify">
+      <p>
         Ponte Vecchio è un ponte abitato storico sul fiume Arno a Firenze. Il ponte collega via Por Santa Maria (angolo
         lungarno degli Acciaiuoli e lungarno degli Archibusieri) a via de' Guicciardini (angolo borgo San Jacopo e via
         de' Bardi).
       </p>
-      <img src="./images/ponte-vecchio.jpg" alt="Ponte vecchio" style="width: 60%" />
+      <img src="./images/ponte-vecchio.jpg" alt="Ponte vecchio" />
     </div>
 
-    <div
-      style="
-        width: 90vw;
-        margin: 0 auto;
-        margin-top: 5rem;
-        border: 3px solid black;
-        background-color: white;
-        padding: 20px 15px;
-        text-align: center;
-      "
-    >
-      <span style="color: red">Seguici sui Social:</span>
+    <div class="footer">
+      <span class="red">Seguici sui Social:</span>
       <a href="https://www.instagram.com/cittadifirenzeufficiale/"
-        ><img src="./images/instagram.webp" alt="Instagram" style="width: 20px"
+        ><img src="./images/instagram.webp" alt="Instagram"
       /></a>
-      <a href="https://www.facebook.com/cittadifirenzeufficiale/"
-        ><img src="./images/facebook.png" alt="Facebook" style="width: 20px"
-      /></a>
+      <a href="https://www.facebook.com/cittadifirenzeufficiale/"><img src="./images/facebook.png" alt="Facebook" /></a>
     </div>
   </body>
 </html>
