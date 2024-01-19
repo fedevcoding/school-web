@@ -4,7 +4,7 @@ body {
 
 }
 
-.header {
+header {
     background-color: rgb(221, 158, 99);
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     color: white;
 }
 
-.header img {
+header img {
     width: 10rem;
     height: 10rem;
 }
@@ -43,7 +43,7 @@ body {
     width: 60%;
 }
 
-.footer {
+footer {
     width: 90vw;
     margin: 0 auto;
     margin-top: 5rem;
@@ -54,7 +54,7 @@ body {
 }
 
 
-.footer img {
+footer img {
     width: 20px;
 }
 
