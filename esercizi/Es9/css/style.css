@@ -16,7 +16,90 @@
     --complementi: rgb(235, 224, 148);
     --info-lab: rgb(160, 144, 255);
     --religione: rgb(117, 117, 255);
+    --studio-ass: rgb(0, 128, 255);
 }
+
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+/* RESET STYLE LINK */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid red;
+    text-align: center;
+}
+
+th {
+    padding: 15px 0;
+    color: red;
+}
+
+td {
+    padding: 0 10px;
+}
+
+main {
+    border: 3px solid black;
+    width: 80vw;
+    margin: 20px auto;
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 200px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+main a {
+    font-size: 22px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+/* prof.html */
+.materia {
+    padding: 20px 0;
+    max-width: 90%;
+    margin: 15px auto;
+    transition: transform 500ms;
+}
+
+.materia:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+/* VARIABILI COLORI MATERIE */
 
 .telecom {
     background-color: var(--telecom);
@@ -50,13 +133,16 @@
 .inglese {
     background-color: var(--inglese);
     color: white;
-
 }
 
 .italiano {
     background-color: var(--italiano);
     color: white;
+}
 
+.studio-ass {
+    background-color: var(--studio-ass);
+    color: white;
 }
 
 .info {
@@ -66,13 +152,11 @@
 .telecom-lab {
     background-color: var(--telecom-lab);
     color: white;
-
 }
 
 .motoria {
     background-color: var(--motoria);
     color: white;
-
 }
 
 .complementi {
@@ -86,64 +170,4 @@
 .religione {
     background-color: var(--religione);
     color: white;
-
-}
-
-body {
-    margin: 0;
-    background-color: grey;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 80%;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-}
-
-tr,
-th,
-td {
-    border: 1px solid red;
-    text-align: center;
-    padding: 10px 0;
-}
-
-th {
-    color: red;
-}
-
-.logo {
-    width: 250px;
-}
-
-main {
-    border: 3px solid black;
-    width: 80vw;
-    margin: 0 auto;
-    background-color: white;
-    padding: 60px 0;
-    text-align: center;
-}
-
-header {
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 50px;
-}
-
-header h1 {
-    font-size: 30px;
-}
-
-main a {
-    font-size: 22px;
-    margin-top: 14px;
-    display: inline-block;
 }
