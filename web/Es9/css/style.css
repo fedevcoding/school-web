@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root {
+    --telecom: rgb(40, 185, 255);
+    --storia: rgb(255, 128, 192);
+    --sistemi-lab: rgb(160, 144, 255);
+    --matematica: rgb(0, 0, 255);
+    --tipsit-lab: rgb(192, 224, 128);
+    --inglese: rgb(70, 70, 255);
+    --tipsit: rgb(255, 160, 255);
+    --sistemi: rgb(255, 160, 255);
+    --italiano: rgb(192, 0, 192);
+    --info: rgb(192, 192, 0);
+    --telecom-lab: rgb(0, 119, 176);
+    --motoria: rgb(255, 64, 64);
+    --complementi: rgb(235, 224, 148);
+    --info-lab: rgb(160, 144, 255);
+    --religione: rgb(117, 117, 255);
+}
+
+.telecom {
+    background-color: var(--telecom);
+}
+
+.storia {
+    background-color: var(--storia);
+}
+
+.sistemi-lab {
+    background-color: var(--sistemi-lab);
+}
+
+.sistemi {
+    background-color: var(--sistemi);
+}
+
+.matematica {
+    background-color: var(--matematica);
+    color: white;
+}
+
+.tipsit-lab {
+    background-color: var(--tipsit-lab);
+}
+
+.tipsit {
+    background-color: var(--tipsit);
+}
+
+.inglese {
+    background-color: var(--inglese);
+    color: white;
+
+}
+
+.italiano {
+    background-color: var(--italiano);
+    color: white;
+
+}
+
+.info {
+    background-color: var(--info);
+}
+
+.telecom-lab {
+    background-color: var(--telecom-lab);
+    color: white;
+
+}
+
+.motoria {
+    background-color: var(--motoria);
+    color: white;
+
+}
+
+.complementi {
+    background-color: var(--complementi);
+}
+
+.info-lab {
+    background-color: var(--info-lab);
+}
+
+.religione {
+    background-color: var(--religione);
+    color: white;
+
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px 0;
+}
+
+th {
+    color: red;
+}
+
+.logo {
+    width: 250px;
+}
+
+main {
+    border: 3px solid black;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+main a {
+    font-size: 22px;
+    margin-top: 14px;
+    display: inline-block;
+}
