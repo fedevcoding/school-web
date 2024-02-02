@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+header img {
+    width: 100vw;
+    height: 300px;
+}
+
+header nav ul {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    background-color: black;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+header li,
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+}
+
+header a:hover {
+    background-color: red;
+    color: black;
+    font-style: italic;
+}
+
+header a:active {
+    color: yellow;
+}
+
+
+.box {
+    border: 2px solid red;
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+.box img {
+    width: 200px;
+}
+
+
+.box p::first-letter {
+    font-size: 2rem;
+    color: red;
+}
+
+
+
+
+
+table.concerti-2023 {
+    width: 50vw;
+    margin: 0 auto;
+    border: 2px dotted black;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.concerti-2023 th {
+    background-color: red;
+    border: 1px solid white;
+    padding: 10px 0;
+}
+
+table.concerti-2023 tr:hover {
+    background-color: cyan;
+}
+
+
+table.concerti-2024 {
+    width: 50vw;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table.concerti-2024 th {
+    background-color: greenyellow;
+    border: 1px solid white;
+    padding: 10px 0;
+}
+
+table.concerti-2024 tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+
+
+
+
+
+.galleria {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.galleria img {
+    width: 23%;
+    object-fit: cover;
+    opacity: 0.6;
+    border: 2px solid transparent;
+    transition: 500ms border, 500ms opacity;
+}
+
+
+.galleria img:hover {
+    opacity: 1;
+    border-color: yellow;
+}
