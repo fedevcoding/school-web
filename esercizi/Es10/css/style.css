@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+body {
+    margin: 0
+}
+
+
 header img {
     width: 100vw;
     height: 300px;
@@ -23,7 +28,9 @@ header a {
 }
 
 header a {
-    transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 }
 
 header a:hover {
@@ -104,19 +111,34 @@ table.concerti-2024 tr:nth-child(odd) {
 .galleria {
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
+}
 
+.galleria div {
+    overflow: hidden;
+    display: inline-block;
+    width: 22%;
+    transition-property: border;
+    transition-duration: 500ms;
+    border: 3px solid transparent;
 }
 
 .galleria img {
-    width: 23%;
-    object-fit: cover;
     opacity: 0.6;
-    border: 2px solid transparent;
-    transition: 500ms border, 500ms opacity;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-property: opacity, scale;
+    transition-duration: 500ms;
+    scale: 1.2;
 }
 
 
-.galleria img:hover {
-    opacity: 1;
+.galleria div:hover {
     border-color: yellow;
+}
+
+.galleria div:hover img {
+    opacity: 1;
+    scale: 1;
 }
