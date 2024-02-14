@@ -1,0 +1,28 @@
+.container {
+    border: 2px solid black;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.container header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.cards .card {
+    height: 400px;
+}
+
+.card p {
+    background-color: cyan;
+    text-align: center;
+    font-style: italic;
+}
