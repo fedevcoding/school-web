@@ -137,4 +137,9 @@ h1 {
     .shoes>main>div {
         flex-basis: 50%;
     }
+
+
+    .shoes>main>div>table {
+        display: none;
+    }
 }
