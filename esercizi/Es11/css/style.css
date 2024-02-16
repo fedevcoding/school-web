@@ -41,14 +41,14 @@ h1 {
     border: 1px solid black;
 }
 
-.cards>.card>img {
+.cards>.card img {
     width: 100%;
     opacity: 1;
     transition: all 0.3s;
     height: 80%;
 }
 
-.cards>.card>img:hover {
+.cards>.card img:hover {
     filter: brightness(0.8);
     border-radius: 30px;
     transition: all 0.3s;
@@ -63,8 +63,78 @@ h1 {
     font-style: italic;
 }
 
+
+.shoes {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.shoes>main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.shoes>main>div>img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.shoes>main>div {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.shoes>main>div>p {
+    background-color: blue;
+    color: white;
+    max-width: 80%;
+    margin: 10px auto 10px auto;
+}
+
+.shoes>main>div>span {
+    color: red;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.shoes>main>div>table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.shoe-table,
+.shoe-table th,
+.shoe-table tr,
+.shoe-table td {
+    border: 1px solid black;
+}
+
+
+.back {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 255, 255, 0.308);
+    color: blueviolet;
+    width: 50vw;
+
+}
+
+
 @media screen and (max-width: 900px) {
     .cards {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .shoes>main>div {
+        flex-basis: 50%;
     }
 }
