@@ -1,8 +1,58 @@
+/* THEME */
 :root {
+    --primary: white;
+    --text: black;
+    --text-accent: orange;
+}
+
+.theme-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#theme {
+    display: none;
+}
+
+.theme-wrapper i {
+    font-size: 1.4rem;
+    display: none;
+}
+
+.theme-wrapper label div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#theme:checked+label .sun i {
+    display: block;
+}
+
+#theme:checked+label .sun::after {
+    content: ' Light';
+}
+
+:not(#theme:checked)+label .moon i {
+    display: block;
+}
+
+:not(#theme:checked)+label .moon::after {
+    content: ' Dark';
+}
+
+:root:has(#theme:checked) {
     --primary: rgb(0, 0, 66);
     --text: white;
     --text-accent: yellow;
 }
+
+/* END THEME */
+
 
 /* utility classes */
 .accent {
@@ -14,11 +64,17 @@
     font-weight: bold;
 }
 
+/* end utility classes */
+
 body {
     margin: 0;
     background-color: var(--primary);
     color: var(--text);
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ::-webkit-scrollbar {
@@ -31,8 +87,6 @@ table {
 
 .container {
     width: 70vw;
-    margin: 0 auto;
-    margin-top: 100px;
 }
 
 .row1 {
@@ -50,7 +104,7 @@ table {
 .row2 .item {
     height: 100%;
     padding: 0 10px;
-    border: 1px solid white;
+    border: 1px solid var(--text);
     flex-basis: 25%;
 }
 
