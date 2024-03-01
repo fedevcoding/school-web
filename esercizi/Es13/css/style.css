@@ -71,10 +71,10 @@ body {
     background-color: var(--primary);
     color: var(--text);
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -87,46 +87,54 @@ table {
 
 .container {
     width: 70vw;
-}
-
-.row1 {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     border: 1px solid var(--text);
-    height: 500px;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
-.row2 {
-    display: flex;
-    align-items: center;
-}
-
-.row2 .item {
-    height: 100%;
+.container .item {
     padding: 0 10px;
     border: 1px solid var(--text);
-    flex-basis: 25%;
+    border-bottom: none;
+    border-left: none;
+    width: 25%;
+}
+
+.container .item:last-child {
+    border-right: none;
 }
 
 
-.globe {
-    height: 100%;
-    flex-basis: 60%;
+.container .globe {
+    width: 60%;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-right: 1px solid var(--text);
 }
 
-.description {
-    padding: 0 20px;
+.container .globe img {
     height: 100%;
-    flex-basis: 40%;
+    max-height: 30vh;
+    object-fit: scale-down;
+}
+
+
+.container .description {
+    padding: 30px 20px;
+    width: 40%;
+}
+
+.container .description p::first-line {
+    color: var(--text-accent);
 }
 
 .description .table {
     margin: 0 auto;
     margin-top: 40px;
-    width: 200px;
+    width: 60%;
 }
 
 .description .table td {
@@ -140,39 +148,17 @@ table {
 }
 
 
-.globe img {
-    width: 350px;
-    object-fit: contain;
-}
 
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .container {
-        width: 100%;
-        margin: 0;
-    }
-
-    .row1 {
         flex-direction: column;
-        height: auto;
+        margin-bottom: 2rem;
     }
 
-    .row2 {
-        flex-direction: column;
-        align-items: normal;
-    }
-
-    .globe {
-        border: none;
+    .container .globe,
+    .container .description,
+    .container .item {
         width: 100%;
-        border-bottom: 1px solid var(--text);
-    }
-
-    .globe img {
-        width: 80%;
-    }
-
-    .description {
-        padding-block-end: 30px;
     }
 }
