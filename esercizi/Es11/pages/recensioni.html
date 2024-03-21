@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="container px-0">
+      <header>
+        <h1>Outlet "SCARPE DIEM"</h1>
+        <a href="./recensioni.html"> ** Lascia una recensione ** </a>
+      </header>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <a href="../index.html" class="w-50 back text-center">TORNA INDIETRO</a>
+    </div>
+
+    <form
+      action="javascript:alert('Recensione registrata')"
+      class="container border border-black border-2 text-center mt-4"
+    >
+      <h1 class="text-danger fst-italic">Conoscere il tuo parere è importante per noi</h1>
+
+      <div class="py-3">
+        <label for="name" class="d-block form-label">NOME:</label>
+        <input type="text" name="name" id="name" maxlength="20" required class="form-control w-auto m-auto" />
+      </div>
+
+      <div class="py-3">
+        <label for="surname" class="d-block form-label">COGNOME:</label>
+        <input type="text" name="surname" id="surname" maxlength="20" required class="form-control w-auto m-auto" />
+      </div>
+
+      <div class="py-3">
+        <label for="date" class="form-label">DATA:</label>
+        <input type="date" name="date" id="date" min="2021-01-01" class="form-select w-auto m-auto" />
+      </div>
+
+      <div class="py-3">
+        <label for="valutazione">VALUTAZIONE:</label>
+        <input type="radio" name="valutazione" id="valutazione" />
+        <span>1</span>
+        <input type="radio" name="valutazione" id="valutazione" />
+        <span>2</span>
+        <input type="radio" name="valutazione" id="valutazione" />
+        <span>3</span>
+        <input type="radio" name="valutazione" id="valutazione" />
+        <span>4</span>
+        <input type="radio" name="valutazione" id="valutazione" />
+        <span>5</span>
+      </div>
+
+      <div class="py-3">
+        <textarea name="othert" id="othert" cols="30" rows="10" class="d-block m-auto"></textarea>
+      </div>
+      <div class="py-3">
+        <input type="submit" value="INVIA" class="btn btn-success" />
+        <input type="reset" value="CANCELLA" class="btn btn-danger" />
+      </div>
+    </form>
+
+    <footer class="row text-center mt-5">
+      <div class="col p-0">
+        <img src="../images/fast-delivery.png" alt="" class="w-25 aspect-1" />
+        <hr />
+        <h5 class="fw-bold">SPEDIZIONE GRATUITA</h5>
+        <p>per ordini superiori a 70$</p>
+      </div>
+
+      <div class="col p-0">
+        <img src="../images/cronometer.png" alt="" class="w-25 aspect-1" />
+        <hr />
+        <h5 class="fw-bold">TEMPI DI CONSEGNA</h5>
+        <p>4-5 giorni lavorativi</p>
+      </div>
+
+      <div class="col p-0">
+        <img src="../images/return.png" alt="" class="w-25 aspect-1" />
+        <hr />
+        <h5 class="fw-bold">RESI E RIMBORSI</h5>
+        <p>entro i 14 giorni dalla ricezione della merce</p>
+      </div>
+
+      <div class="col p-0">
+        <img src="../images/card.jpg" alt="" class="w-25 aspect-1" />
+        <hr />
+        <h5 class="fw-bold">PAGAMENTI SICURI</h5>
+        <p>Paypal, Visa, Mastercard, Contrassegno</p>
+      </div>
+    </footer>
+  </body>
+</html>
