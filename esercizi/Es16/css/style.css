@@ -1,0 +1,13 @@
+.w-14 {
+    width: 2.5rem;
+}
+
+.vmin-75 {
+    height: 75vmin;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
