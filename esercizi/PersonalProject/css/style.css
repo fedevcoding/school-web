@@ -1,0 +1,20 @@
+:root {
+    --BG-COLOR: #030712;
+    --TEXT-COLOR: white;
+    --ACCENT-COLOR: #735BD9;
+    --ACCENT-COLOR-2: #515A69;
+}
+
+.primary-bg {
+    background-color: var(--BG-COLOR);
+}
+
+.btn {
+    background-color: var(--ACCENT-COLOR) !important;
+    color: var(--TEXT-COLOR) !important;
+    border: none;
+}
+
+a {
+    color: var(--TEXT-COLOR) !important;
+}
