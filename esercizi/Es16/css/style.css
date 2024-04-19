@@ -11,3 +11,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
+.h-card-img {
+    height: 30vh !important;
+}
