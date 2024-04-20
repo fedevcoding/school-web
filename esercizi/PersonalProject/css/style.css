@@ -4,6 +4,9 @@
     --ACCENT-COLOR: #735BD9;
     --ACCENT-COLOR-2: #515A69;
 }
+body {
+    overflow-x: hidden;
+}
 
 .primary-bg {
     background-color: var(--BG-COLOR);
@@ -17,4 +20,8 @@
 
 a {
     color: var(--TEXT-COLOR) !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.9) !important;
 }
