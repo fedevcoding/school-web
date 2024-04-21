@@ -12,6 +12,10 @@ body {
     background-color: var(--BG-COLOR);
 }
 
+.accent {
+    color: var(--ACCENT-COLOR);
+}
+
 .btn {
     background-color: var(--ACCENT-COLOR) !important;
     color: var(--TEXT-COLOR) !important;
