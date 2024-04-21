@@ -28,4 +28,17 @@ a {
 
 .navbar {
     box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.9) !important;
+    height: 80px !important;
+}
+
+.home-height {
+    height: calc(100vh - 80px);
+}
+
+.gap-10 {
+    gap: 6rem;
+}
+
+.mb-10 {
+    margin-bottom: 6rem;
 }
