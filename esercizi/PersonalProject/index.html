@@ -18,40 +18,29 @@
     <!-- HEADER -->
 
     <nav class="navbar navbar-expand-lg primary-bg">
-        <div class="container-fluid">
+        <div class="container-fluid max-width-wrapper p-0">
             <img src="./images/logo.png" alt="logo" />
-            <a class="navbar-brand" href="#">Tech Tools</a>
+            <a class="navbar-brand mx-3 fs-4" href="#">Tech Tools</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mx-5 fw-bolder fs-6">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#about-us">About us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#faq">Faq</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex" id="search-form">
                     <input class="form-control me-2" type="search" id="search-product" placeholder="Search"
                         aria-label="Search">
-                    <button class="btn btn-outline-success btn" type="submit" onclick="searchProduct()">Search</button>
+                    <button class="btn btn-outline-success btn" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -60,8 +49,8 @@
 
     <!-- HOME SECTION -->
 
-    <main class="row px-5 pt-5 home-height">
-        <div class="col-7 d-flex flex-column gap-10 justify-content-center mb-10 home-description">
+    <main class="row home-height max-width-wrapper">
+        <div class="col-7 p-0 d-flex flex-column gap-10 justify-content-center">
             <h1 class="fw-bold">Your one-stop shop for tech products.</h1>
             <h4 class="fw-bold">Find the best <span class="accent">high quality</span> tech-tools on the market<br> with
                 <span class="accent">free shipping</span> and secure
