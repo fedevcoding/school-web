@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --BG-COLOR: #030712;
     --TEXT-COLOR: white;
@@ -9,6 +15,27 @@
 body {
     overflow-x: hidden;
 }
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 
 .primary-bg {
     background-color: var(--BG-COLOR);
@@ -28,10 +55,6 @@ a {
     color: var(--TEXT-COLOR) !important;
 }
 
-.navbar {
-    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.9) !important;
-    height: 80px !important;
-}
 
 .home-height {
     height: calc(100vh - 80px);
@@ -45,8 +68,19 @@ a {
     margin-bottom: 6rem;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: white;
+}
+
 
 /* HEADER */
+.navbar {
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.9) !important;
+    height: 80px !important;
+}
 
 #search-product {
     background-color: var(--ACCENT-COLOR-3);
@@ -100,6 +134,13 @@ a {
 }
 
 .max-width-wrapper {
-    max-width: 90vw;
+    max-width: 85vw;
     margin: 0 auto;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: var(--ACCENT-COLOR-3);
 }

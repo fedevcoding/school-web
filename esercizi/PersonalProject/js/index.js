@@ -6,6 +6,10 @@ document.getElementById("search-form")?.addEventListener("submit", e => {
 });
 
 
+document.querySelectorAll(".curr-year")?.forEach((el) => {
+    el.textContent = new Date().getFullYear()
+})
+
 const typed = new Typed("#typed", {
     strings: ["Keyboards.", "Headphones.", "Chargers.", "Smart watches."],
     startDelay: 100,
