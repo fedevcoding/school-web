@@ -1,13 +1,17 @@
+const year = new Date().getFullYear();
+const TECH_TOOLS_URL = "https://tech-tools.fedev.me"
+
+
 document.getElementById("search-form")?.addEventListener("submit", e => {
     e.preventDefault();
     const val = document.getElementById("search-product")?.value;
     if (!val) return
-    window.open(`https://tech-tools.fedev.me/?search=${val}`);
+    window.open(`${TECH_TOOLS_URL}/?search=${val}`);
 });
 
 
 document.querySelectorAll(".curr-year")?.forEach((el) => {
-    el.textContent = new Date().getFullYear()
+    el.textContent = year;
 })
 
 const typed = new Typed("#typed", {
