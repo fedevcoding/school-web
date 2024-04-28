@@ -56,8 +56,91 @@
 
     <!-- FAQ SEC -->
 
-    <main class="home-height">
-        <h2 class="text-center mt-5 fw-bold">FAQ</h2>
+    <main class="home-height max-width-wrapper">
+        <h2 class="text-center my-5 fw-bold">FAQ</h2>
+
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What payment methods do you accept?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Currently we accept the following payment methods:</strong>
+                        <ul>
+                            <li>PayPal</li>
+                            <li>Visa</li>
+                            <li>Mastercard</li>
+                            <li>Maestro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I track my order?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Once your order has been shipped, you will receive an email with the tracking
+                        information. You can also track your order by logging into your account and checking
+                        the order status.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What is your return policy?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We offer a 30-day return policy on all products. If you are not satisfied with your purchase,
+                        you can return the item within this period for a refund or exchange. Please refer to our Returns
+                        & Exchanges page for more details.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How long does shipping take?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Shipping times vary depending on your location and the shipping method you choose. Standard
+                        shipping usually takes 3-5 business days, while expedited shipping can take 1-2 business days.
+                        Please refer to our Shipping page for more details.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Do you offer gift wrapping or gift cards?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        At this time, we do not offer gift wrapping or gift cards. However, we are working on adding
+                        these
+                        features in the future. Please check back for updates.
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 

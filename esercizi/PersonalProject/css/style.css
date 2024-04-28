@@ -76,6 +76,25 @@ hr {
 }
 
 
+
+.accordion-item,
+.accordion-button {
+    background-color: var(--ACCENT-COLOR-3) !important;
+    color: var(--TEXT-COLOR) !important;
+    border: 1px solid var(--ACCENT-COLOR-2) !important;
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
 /* HEADER */
 .navbar {
     box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.9) !important;

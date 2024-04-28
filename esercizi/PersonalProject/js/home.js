@@ -1,4 +1,3 @@
-
 const typed = new Typed("#typed", {
     strings: ["Keyboards.", "Headphones.", "Chargers.", "Smart watches."],
     startDelay: 100,
