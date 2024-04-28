@@ -1,4 +1,3 @@
-document.querySelector("main").style.height = (window.innerHeight - document.getElementById("header").offsetHeight) + "px";
 
 const typed = new Typed("#typed", {
     strings: ["Keyboards.", "Headphones.", "Chargers.", "Smart watches."],
