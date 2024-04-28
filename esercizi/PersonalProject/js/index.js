@@ -1,4 +1,4 @@
-const year = new Date().getFullYear();
+const CURRENT_YEAR = new Date().getFullYear();
 const TECH_TOOLS_URL = "https://tech-tools.fedev.me"
 
 
@@ -11,8 +11,10 @@ document.getElementById("search-form")?.addEventListener("submit", e => {
 
 
 document.querySelectorAll(".curr-year")?.forEach((el) => {
-    el.textContent = year;
+    el.textContent = CURRENT_YEAR;
 })
+
+document.querySelector("main").style.height = (window.innerHeight - document.getElementById("header").offsetHeight) + "px";
 
 const typed = new Typed("#typed", {
     strings: ["Keyboards.", "Headphones.", "Chargers.", "Smart watches."],

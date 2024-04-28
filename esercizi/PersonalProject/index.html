@@ -17,13 +17,20 @@
 
     <!-- HEADER -->
 
-    <nav class="navbar navbar-expand-lg primary-bg">
+    <nav class="navbar navbar-expand-lg primary-bg" id="header">
         <div class="container-fluid max-width-wrapper p-0">
-            <img src="./images/logo.png" alt="logo" />
-            <a class="navbar-brand mx-3 fs-4" href="">Tech Tools</a>
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="./images/logo.png" alt="logo" />
+                <p class="mx-3 fs-4 m-0">Tech Tools</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mx-5 fw-bolder fs-6">
+                <ul class="navbar-nav ms-lg-5 me-auto fw-bolder fs-6 mt-3 mt-lg-0">
                     <li class="nav-item mx-2">
                         <a class="nav-link active" aria-current="page" href="">Home</a>
                     </li>
@@ -37,7 +44,7 @@
                         <a class="nav-link opacity-75" aria-current="page" href="./pages/contact.html">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" id="search-form">
+                <form class="d-flex py-3 py-lg-0" id="search-form">
                     <input class="form-control me-2" type="search" id="search-product" placeholder="Search"
                         aria-label="Search">
                     <button class="btn btn-outline-success btn" type="submit">Search</button>
@@ -49,7 +56,7 @@
 
     <!-- HOME SECTION -->
 
-    <main class="row home-height max-width-wrapper">
+    <main class="row max-width-wrapper">
         <div class="col-7 p-0 d-flex flex-column gap-10 justify-content-center">
             <h1 class="fw-bold">Your one-stop shop for tech products.</h1>
             <h4 class="fw-bold">Find the best <span class="accent">high quality</span> tech-tools on the market<br> with
