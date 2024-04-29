@@ -142,14 +142,19 @@ hr {
 
 .home-images img:nth-child(1) {
     grid-area: img1;
+    max-width: 20vw;
 }
 
 .home-images img:nth-child(2) {
     grid-area: img2;
+    object-fit: cover;
+    max-width: 12vw;
 }
 
 .home-images img:nth-child(3) {
     grid-area: img3;
+    max-width: 8vw;
+
 }
 
 .max-width-wrapper {
