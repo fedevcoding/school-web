@@ -196,3 +196,21 @@ footer {
 .about-us-cards>div {
     padding: 1rem 3rem;
 }
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar img {
+        width: 40px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-toggler {
+        scale: 1;
+    }
+
+    .max-width-wrapper {
+        max-width: 93vw;
+    }
+}
