@@ -154,6 +154,10 @@ hr {
     min-height: 80px !important;
 }
 
+.navbar img {
+    width: 50px !important;
+}
+
 .styled-input {
     background-color: var(--ACCENT-COLOR-3) !important;
     border: 1px solid var(--ACCENT-COLOR-2) !important;
