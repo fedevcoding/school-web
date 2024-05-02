@@ -154,6 +154,10 @@ hr {
     min-height: 80px !important;
 }
 
+.navbar img {
+    width: 50px !important;
+}
+
 .styled-input {
     background-color: var(--ACCENT-COLOR-3) !important;
     border: 1px solid var(--ACCENT-COLOR-2) !important;
@@ -195,4 +199,22 @@ footer {
 /* ABOUT US */
 .about-us-cards>div {
     padding: 1rem 3rem;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar img {
+        width: 40px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-toggler {
+        scale: 1;
+    }
+
+    .max-width-wrapper {
+        max-width: 93vw;
+    }
 }
