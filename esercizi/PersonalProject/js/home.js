@@ -6,3 +6,6 @@ const typed = new Typed("#typed", {
     backDelay: 80,
     loop: true,
 });
+
+const element = document.querySelector("#tilt");
+VanillaTilt.init(element);

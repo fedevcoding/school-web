@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 <form class="d-flex py-3 py-lg-0" id="search-form">
-                    <input class="form-control me-2" type="search" id="search-product" placeholder="Search"
+                    <input class="form-control me-2 styled-input" type="search" id="search-product" placeholder="Search"
                         aria-label="Search">
                     <button class="btn btn-outline-success btn" type="submit">Search</button>
                 </form>
@@ -58,6 +58,68 @@
 
     <main class="home-height">
         <h2 class="text-center mt-5 fw-bold">CONTACT</h2>
+
+        <div class="max-width-wrapper">
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Write us</h3>
+                    <form action="javascript:void(alert('Email sent'))" class="mt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control styled-input" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control styled-input" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control styled-input" id="message" rows="7" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 ps-5">
+                    <h3 class="fw-bold">Contact information</h3>
+                    <p class="opacity-75">We're open for any suggestion or just to have a chat</p>
+
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="fa fa-phone icon-wrapper me-3"></i>
+                        <p class="m-0">Phone:
+                            <a href="tel:+391234567890">
+                                +39 123 456 7890
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="fa fa-paper-plane icon-wrapper me-3"></i>
+                        <p class="m-0">
+                            Email:
+                            <a href="mailto:techtools@gmail.com">
+                                techtools@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="fa fa-location-dot icon-wrapper me-3"></i>
+                        <p class="m-0">Address:
+                            <a
+                                href="https://www.google.com/maps/place/ITIS+Antonio+Meucci/@43.7657444,11.2107423,16z/data=!3m1!4b1!4m6!3m5!1s0x132a512ec6592835:0x22481b695a2c1f34!8m2!3d43.7657406!4d11.2133172!16s%2Fg%2F1pp2tjx33?entry=ttu">
+                                Via del Filarete, 17, 50143 Firenze FI
+                            </a>
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="fa-brands fa-instagram icon-wrapper me-3"></i>
+                        <p class="m-0">Instagram:
+                            <a href="https://instagram.com/techtools">
+                                @techtools
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -101,6 +163,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../js/index.js" defer></script>
 </body>
 
