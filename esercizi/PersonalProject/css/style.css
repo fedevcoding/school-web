@@ -190,3 +190,9 @@ hr {
 footer {
     background-color: var(--ACCENT-COLOR-3);
 }
+
+
+/* ABOUT US */
+.about-us-cards>div {
+    padding: 1rem 3rem;
+}
