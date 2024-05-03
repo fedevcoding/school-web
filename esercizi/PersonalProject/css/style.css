@@ -192,6 +192,22 @@ footer {
     background-color: var(--ACCENT-COLOR-3);
 }
 
+footer li {
+    display: flex;
+    justify-content: center;
+}
+
+footer li i {
+    margin-left: 1rem;
+}
+
+footer li a {
+    width: 20%;
+}
+
+footer .row>div {
+    text-align: center;
+}
 
 /* ABOUT US */
 .about-us-cards>div {
