@@ -192,18 +192,24 @@ footer {
     background-color: var(--ACCENT-COLOR-3);
 }
 
-footer li {
+footer ul {
+    margin: 0;
+}
+
+footer .links {
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
-footer li i {
-    margin-left: 1rem;
+
+footer .links>div,
+footer .links>ul {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer li a {
-    width: 20%;
-}
 
 footer .row>div {
     text-align: center;
