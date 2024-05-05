@@ -15,6 +15,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
+    cursor: url('../images/mouse.png'), auto !important;
 }
 
 
@@ -187,6 +188,61 @@ hr {
     height: 30vh !important;
 }
 
+.nav-link,
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after,
+.nav-link:after {
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    opacity: 0.6;
+    width: 0;
+    transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    -webkit-transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    -ms-transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+
+.nav-link:hover:after,
+.nav-link:hover:after {
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* HOME */
+
+.home-btn {
+    * {
+        transition: margin 250ms, opacity 250ms;
+        -webkit-transition: margin 250ms, opacity 250ms;
+        -moz-transition: margin 250ms, opacity 250ms;
+        -ms-transition: margin 250ms, opacity 250ms;
+        -o-transition: margin 250ms, opacity 250ms;
+    }
+
+    p {
+        margin-left: 1rem !important;
+    }
+
+    &:hover {
+        i {
+            opacity: 1 !important;
+        }
+
+        p {
+            margin-left: 0 !important;
+            margin-right: 1rem !important;
+        }
+    }
+}
 
 /* FOOTER */
 footer {
@@ -229,6 +285,12 @@ footer .row>div {
 @media screen and (max-width: 992px) {
     .navbar img {
         width: 40px !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home-btn {
+        width: 50% !important;
     }
 }
 
