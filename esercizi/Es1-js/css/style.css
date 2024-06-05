@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 30vh;
+}
+
+
+ul {
+    list-style-position: inside;
+}
+
+.btn-acquista {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+
+.btn-acquista:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    rotate: 360deg;
+}
+
+@media screen and (max-width: 991px) {
+    .title {
+        font-size: 3.5em !important;
+    }
+
+    .btn-acquista {
+        padding: 15px 25px;
+    }
+
+    .costi {
+        margin-top: 30px;
+    }
+}
