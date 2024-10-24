@@ -15,8 +15,8 @@ btn.addEventListener("click", () => {
   }
 
   divisori.forEach(div => {
-    const divElem = document.createElement("li");
-    divElem.innerHTML = div;
-    nums.appendChild(divElem);
+    const liElement = document.createElement("li");
+    liElement.innerHTML = div;
+    nums.appendChild(liElement);
   });
 });
