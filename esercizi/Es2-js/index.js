@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
   const divisori = [];
 
   for (let i = val; i >= 0; i--) {
-    if ((val / i) % 1 === 0) {
+    if (val % i === 0) {
       divisori.push(i);
     }
   }
