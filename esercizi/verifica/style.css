@@ -1,0 +1,80 @@
+body {
+    background-color: #fdf8c3;
+    /* Giallo pallido, simile a un post-it */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.loader {
+    height: 45px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+article {
+    background-color: #fffa65;
+    color: #333;
+    padding: 20px;
+    width: 250px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    transform: rotate(-2deg);
+    /* Leggera inclinazione per effetto realistico */
+    transition: transform 0.2s ease-in-out;
+    overflow-y: auto;
+}
+
+/* Effetto al passaggio del mouse */
+article:hover {
+    /* Raddrizza e ingrandisce leggermente */
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* Contenitore per disposizione a griglia */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Verde brillante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Ombra per l'effetto 3D */
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Colore più scuro al passaggio del mouse */
+    transform: translateY(-2px);
+    /* Solleva il pulsante per un effetto hover */
+}
+
+button:active {
+    transform: translateY(2px);
+    /* Spinge il pulsante verso il basso quando cliccato */
+}

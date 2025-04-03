@@ -1,0 +1,6 @@
+Comandi git usati:
+
+1) git clone "repository url" per clonare la repo di scuola
+2) git add . "per aggiungere i file in staging"
+3) git commit -m 'msg' "per fare un commit delle modifiche"
+4) git push "per pushare a github le modifiche"
